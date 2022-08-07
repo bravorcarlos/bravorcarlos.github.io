@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carlos Bravo - Web Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/355ed63745.js" crossorigin="anonymous"></script>
+</head>
+  <body>
+    <div class="container">
+      <nav class="nav-main">
+        <h2 id="name">Carlos Bravo <span class="small-text">&lt;Web Developer&gt;</span></h2>
+        <img src="img/logo.png" alt="logo" class="logo">
+        <ul class="nav-menu">
+            <li><a href="#about-me-header">#About-me</a></li>
+            <li><a href="#courses">#Courses</a></li>
+            <li><a href="#projects">#Projects</a></li>
+            <li><a href="#contact">#Contact</a></li>
+        </ul>
+      </nav>
+      <div id="banner"  title="Mobile/Responsive version under construction">
+        <img src="img/logo1.png" alt="banner">
+        <br>
+        <h3>More <i class="fa-solid fa-angles-down"></i></h3>
+      </div>
+      <div id="about-me-header">
+        <h2 class="section-head">About me</h2>
+        <span class="small-text" class="instruction">(Learn a little about me)</span>
+
+      </div>
+      <div id="about-me" onmouseover="resaltar()" onmouseout="noResaltar()">
+        <div class="about-me-img">
+            <img src="img/profile.jpg" alt="Profile picture" class="profile-pic" id="profile-pic">
+        </div>
+        <div class="about-me-text" id="about-me-text">
+            <h3>Who am I?</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure excepturi adipisci non tempore assumenda eum animi nihil iste suscipit doloremque? Reiciendis quis ad, dolorum natus alias saepe impedit nam quia, perspiciatis debitis eaque hic ut expedita quo? Enim esse, quisquam natus odio accusamus totam soluta exercitationem nulla veritatis deleniti possimus modi velit recusandae animi delectus alias, molestias eaque provident dolores, vitae saepe suscipit. Nesciunt voluptatibus ipsum beatae dicta dolore tempora, aperiam quas enim delectus, voluptas nostrum architecto dolor quidem ratione, quam esse reiciendis corporis eligendi ea quisquam itaque odit. Saepe.</p>   
+        </div>
+      </div>
+      <div id="courses">
+        <div id="courses-header">
+            <h2 class="section-head">Courses</h2>
+            <span class="small-text" class="instruction">(Click in the course to see the certification)</span>
+            <div id="course-cont">
+                <ul id="course-list">
+                    <li id="googleDiv"> <i class="fa-brands fa-google"></i>&nbsp;Google&nbsp;<i class="fa-solid fa-angle-down"></i></li>
+                    <div id="google" class="course-items">
+                        <a href="https://learndigital.withgoogle.com/link/1nur091p2ww" target="_blank">
+                            <h3>Introduccion al Desarrollo Web I</h3>
+                        </a>
+                        <span class="small-text">ID: U82 7Q7 MQL (Copy and paste to validate)</span>
+                        <a href="https://learndigital.withgoogle.com/link/1nur091p2ww" target="_blank">
+                            <h3>Introduccion al Desarrollo Web II</h3>
+                        </a>
+                        <span class="small-text">ID: L53 323 TTA (Copy and paste to validate)</span>
+                    </div>
+                    <li id="codecademyDiv">Codecademy&nbsp;<i class="fa-solid fa-angle-down"></i></li>
+                    <div id="codecademy" class="course-items">
+                        <a href="https://www.codecademy.com/profiles/bravorcarlos/certificates/9eb0741e5ebef1f9f58a53bfac67d3a7" target="_blank">
+                            <h3>Learn HTML</h3>
+                        </a>
+                        <a href="https://www.codecademy.com/profiles/bravorcarlos/certificates/9a5bb1fc45b4281af1fffec93b0aaf05" target="_blank">
+                            <h3>Learn CSS</h3>
+                        </a>
+                        <a href="https://www.codecademy.com/profiles/bravorcarlos/certificates/705dcb15de0da4dd9d9fc4f3274b430e" target="_blank">
+                            <h3>Learn JavaScript</h3>
+                        </a>
+                    </div>
+                    <li id="freecodeDiv"><i class="fa-brands fa-free-code-camp"></i>&nbsp;freeCodeCamp&nbsp;<i class="fa-solid fa-angle-down"></i></li>
+                    <div id="freecode" class="course-items">
+                        <a href="https://freecodecamp.org/certification/bravorcarlos/responsive-web-design" target="_blank">
+                            <h3>Responsive Web Design</h3>
+                        </a>
+                        <a href="https://freecodecamp.org/certification/bravorcarlos/javascript-algorithms-and-data-structures" target="_blank">
+                            <h3>JavaScript Algorithms and Data Structures</h3>
+                        </a>
+                    </div>
+                    
+                </ul>
+            </div>
+          </div>
+      </div>
+      <div id="projects">
+    </div>
+    <div id="projects-header">
+      <h2 class="section-head">Projects</h2>
+      <span class="small-text" class="instruction">(Swipe to check some of my projects)</span>
+    </div>
+    <div id="projects-img">
+        <button onclick="prev()" class="btn"> <i class="fa-solid fa-angle-left"></i> </button>
+        <img id="slider" src="img/1.png" width="300px" height="400px"/>
+        <button onclick="next()" class="btn"> <i class="fa-solid fa-angle-right"></i> </button>
+    </div>
+      </div>
+      <div id="contact">
+        <div id="contact-header">
+            <h2 class="section-head">Contact</h2>
+            <span class="small-text" class="instruction">(Say Hi!)</span>
+          </div>
+          <div class="contac-cont">
+            <ul id="contact-list">
+                <li id="whatsappDiv"><i class="fa-brands fa-whatsapp"></i>&nbsp;Whatsapp&nbsp;<i class="fa-solid fa-angle-down"></i></li>
+                <div class="contact-items" id="whatsapp"><h3>+584148036805</h3></div>
+                <li id="gmailDiv"><i class="fa-solid fa-envelope"></i>&nbsp;Mail&nbsp;<i class="fa-solid fa-angle-down"></i></li>
+                <div class="contact-items" id="gmail"><h3>bravorcarlos1@gmail.com</h3></div>
+            </ul>
+          </div>
+      </div>
+    </div>
+    <footer>
+       <span class="small-text" class="instruction">Copyright &#169 2022 Carlos Bravo</span>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
