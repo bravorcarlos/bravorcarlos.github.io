@@ -76,8 +76,6 @@ h4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
-    padding: 20px 0;
     background-color: #1b1b1b;
     box-shadow: 0 0 5px 0 black;
     position: fixed;
@@ -214,6 +212,11 @@ h4 {
     justify-content: center;
 }
 
+#slider {
+    width: 300px;
+    height: 400px;
+}
+
 .btn {
     background-color: #1b1b1b;
     height: 300px;
@@ -289,4 +292,69 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Media queries */
+@media (max-width: 700px) {
+    #name {
+        font-size: 24px;
+    }
+
+    .nav-main {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    .nav-main img{
+        display: none;
+    }
+
+    .nav-main ul li{
+        text-align: center;
+        margin: auto;
+    }
+
+    #banner {
+        margin-top: 20%;
+    }
+
+    #banner img {
+        width: 50%;
+    }
+
+    #about-me {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .about-me-text {
+        width: 95%;
+        margin: 20px auto 20px auto;
+    }
+
+    .about-me-img {
+        text-align: center;
+        margin: 20px auto 20px auto;
+    }
+
+    .profile-pic {
+        width: 200px;
+        height: 300px;
+    }
+
+    #course-list {
+        width: 90%;
+    }
+
+    #slider {
+        width: 230px;
+        height: 350px;
+    }
+
+    #contact-list {
+        width: 90%;
+    }
+
 }
