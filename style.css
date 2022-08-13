@@ -296,6 +296,10 @@ footer {
 
 /* Media queries */
 @media (max-width: 700px) {
+    h3 {
+        font-size: 22px;
+    }
+
     #name {
         font-size: 24px;
     }
@@ -348,6 +352,11 @@ footer {
         width: 90%;
     }
 
+    #course-list li {
+        font-size: 32px;
+
+    }
+
     #slider {
         width: 230px;
         height: 350px;
@@ -355,6 +364,10 @@ footer {
 
     #contact-list {
         width: 90%;
+    }
+
+    #contact-list li {
+        font-size: 32px;
     }
 
 }
