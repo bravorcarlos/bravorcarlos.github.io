@@ -80,7 +80,7 @@ gmailDiv.addEventListener("click", function() {
 });
 
 //Variables y funciones de los botones del deslizador de imagenes
-let images = [ "img/1.png", "img/2.jpg", "img/3.jpg", "img/4.jpg"];
+let images = [ "img/1.png", "img/2.jpg", "img/3.jpg", "img/4.jpg", "img/5.jpg"];
 
 let num = 0;
 
