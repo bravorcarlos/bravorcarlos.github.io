@@ -2,11 +2,13 @@
 let google = document.getElementById("google");
 let codecademy = document.getElementById("codecademy");
 let freecode = document.getElementById("freecode");
+let coursera = document.getElementById("coursera");
 
 //Div de cursos
 let googleDiv = document.getElementById("googleDiv");
 let codecademyDiv = document.getElementById("codecademyDiv");
 let freecodeDiv = document.getElementById("freecodeDiv");
+let courseraDiv = document.getElementById("courseraDiv");
 
 //Div de contacto
 let whatsappDiv = document.getElementById("whatsappDiv");
@@ -21,12 +23,24 @@ window.addEventListener("load", function() {
     google.style.display = "none";
     codecademy.style.display = "none";
     freecode.style.display = "none";
+    coursera.style.display = "none";
 
     whatsapp.style.display = "none";
     gmail.style.display = "none";
 });
 
 //Eventos de mostrar y esconder cursos
+courseraDiv.addEventListener("click", function() {
+  if (coursera.style.display === "none") {
+      coursera.style.display = "block";
+      courseraDiv.style.textDecoration = "underline";
+    } else {
+      coursera.style.display = "none";
+      courseraDiv.style.textDecoration = "none";
+
+    }
+});
+
 googleDiv.addEventListener("click", function() {
     if (google.style.display === "none") {
         google.style.display = "block";
@@ -80,7 +94,7 @@ gmailDiv.addEventListener("click", function() {
 });
 
 //Variables y funciones de los botones del deslizador de imagenes
-let images = [ "img/1.png", "img/2.jpg", "img/3.jpg", "img/4.jpg", "img/5.jpg"];
+let images = [ "img/1.png", "img/2.jpg", "img/3.jpg", "img/4.jpg"];
 
 let num = 0;
 
